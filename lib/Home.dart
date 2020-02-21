@@ -38,11 +38,9 @@ class _HomeState extends State<Home> {
                           fontWeight: FontWeight.bold
                         ),
                         ),
-
                         Container(
                           child: Row(
                             children: <Widget>[
-
                               Container(
                                 padding: EdgeInsets.all(5.0),
                                 margin: EdgeInsets.all(10.0),
@@ -60,9 +58,7 @@ class _HomeState extends State<Home> {
                                 ),
                                 child: Icon(Icons.message,color: Colors.black,),
                               ),
-
-
-
+                              
                             ],
                           ),
                         )
