@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
                                 ),
                                 child: Icon(Icons.message,color: Colors.black,),
                               ),
-                              
+
                             ],
                           ),
                         )
@@ -97,18 +97,83 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ),
-                  Divider(height: 6.0,color: Colors.black,)
+                  Divider(height: 6.0,color: Colors.black,),
 
+                  Container(
+                    margin: EdgeInsets.all(20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween
+                        ,
+                      children: <Widget>[
+
+                        //first container start
+                        Container(
+                          child: Row(
+                            children: <Widget>[
+                              Icon(Icons.video_call,color: Colors.pink,),
+                              Text('Live',
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                color: Colors.black
+                              ),
+                              )
+                            ],
+                          ),
+                        ),
+                        //end of first container
+
+                        Container(
+                          height: 30.0,
+                          width: 0.5,
+                          color: Colors.black,
+                        ),
+
+                        //second container start
+                        Container(
+                          child: Row(
+                            children: <Widget>[
+                              Icon(Icons.photo,color: Colors.green,),
+                              Text('Photo',
+                                style: TextStyle(
+                                    fontSize: 18.0,
+                                    color: Colors.black
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        //end of second container
+
+                        Container(
+                          height: 30.0,
+                          width: 0.5,
+                          color: Colors.black,
+                        ),
+                        //third container start
+                        Container(
+                          child: Row(
+                            children: <Widget>[
+                              Icon(Icons.add_location,color: Colors.pink,),
+                              Text('Check In',
+                                style: TextStyle(
+                                    fontSize: 18.0,
+                                    color: Colors.black
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        //end of third container
+
+
+
+                      ],
+                    ),
+                  ),
 
                 ],
               ),
             )
-
-
-
-
-
-
           ],
         ),
 
