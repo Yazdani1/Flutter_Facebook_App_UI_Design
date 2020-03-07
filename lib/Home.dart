@@ -197,17 +197,32 @@ class _HomeState extends State<Home> {
 
             Container(
               margin: EdgeInsets.only(top: 10.0, bottom: 10.0),
-              height: 150.0,
+              height: 200.0,
               color: Color(0xFFffffff),
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  getStory(context, pic1, img1, "Jon Deo")
+                  getStory(context, pic1, img1, "Jon Deo"),
+                  getStory(context, pic2, img2, "David Jon"),
+                  getStory(context, pic3, img3, "Jonson"),
+                  getStory(context, pic4, img4, "Moral"),
+                  getStory(context, pic5, img4, "Smith"),
+
                 ],
               ),
             ),
 
             //end second container
+
+            //start third container
+            Container(
+              color: Color(0xFFffffff),
+              margin: EdgeInsets.only(top: 5.0,bottom: 5.0),
+              height: 400.0,
+            )
+            //end third container
+
+
 
 
           ],
@@ -220,25 +235,34 @@ class _HomeState extends State<Home> {
   Widget getStory(BuildContext context, String profile_pic, String img,
       String name) {
     return Container(
-      height: 120.0,
+      height: 180.0,
       width: 120.0,
       margin: EdgeInsets.all(10.0),
       child: Stack(
+        textDirection: TextDirection.ltr,
         children: <Widget>[
 
           Container(
-            child: Image.network(img,
-              height: 120.0,
-              width: 120.0,
-              fit: BoxFit.cover,
+            decoration: BoxDecoration(
+                color: const Color(0xff7c94b6),
+                borderRadius: BorderRadius.circular(15.0),
+                image: DecorationImage(
+                    colorFilter: new ColorFilter.mode(
+                        Colors.red.withOpacity(0.6), BlendMode.dstATop),
+                    image: NetworkImage(img),
+                  fit: BoxFit.cover,
+                )
+
             ),
           ),
 
           Positioned(
-            top: 30.0,
-            bottom: 30.0,
+            top: 10.0,
+            left: 10.0,
+            bottom: 15.0,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
               children: <Widget>[
 
                 Container(
@@ -246,20 +270,24 @@ class _HomeState extends State<Home> {
                   width: 50.0,
                   child: ClipOval(
                     child: Image.network(profile_pic,
-                    fit: BoxFit.cover,
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
 
                 Container(
-                  child: Text(name,
-                  maxLines: 1,
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+                  height: 15.0,
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(name,
+                      maxLines: 1,
+                      style: TextStyle(
+                          color: Colors.white,
+                        fontSize: 16.0
+                      ),
+                    ),
                   ),
                 ),
-
 
 
               ],
