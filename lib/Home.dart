@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
         child: Column(
           children: <Widget>[
 
-            //First Cotainer
+            //First Cotainer start
 
             Container(
               height: 250.0,
@@ -173,7 +173,24 @@ class _HomeState extends State<Home> {
 
                 ],
               ),
-            )
+            ),
+
+            //end first container
+
+            //start second container
+
+            Container(
+              margin: EdgeInsets.only(top: 10.0,bottom: 10.0),
+              height: 150.0,
+              color: Color(0xFFffffff),
+            ),
+
+            //end second container
+
+
+
+
+
           ],
         ),
 
