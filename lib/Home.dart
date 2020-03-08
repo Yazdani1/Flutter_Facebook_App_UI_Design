@@ -326,7 +326,7 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 //first container
                 Container(
-
+                  
                 ),
                 //end first container
 
