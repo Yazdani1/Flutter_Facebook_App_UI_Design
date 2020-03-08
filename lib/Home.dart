@@ -30,6 +30,7 @@ class _HomeState extends State<Home> {
     return new Scaffold(
       backgroundColor: Color(0xFFf5f5f5),
       body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           children: <Widget>[
 
@@ -216,9 +217,17 @@ class _HomeState extends State<Home> {
 
             //start third container
             Container(
-              color: Color(0xFFffffff),
-              margin: EdgeInsets.only(top: 5.0,bottom: 5.0),
-              height: 400.0,
+              height: MediaQuery.of(context).size.width,
+              child: ListView(
+                children: <Widget>[
+
+                  mainPost(context, pic5, "Jon Deo", img3),
+                  mainPost(context, pic5, "Jon Deo", img3),
+                  mainPost(context, pic5, "Jon Deo", img3),
+
+
+                ],
+              ),
             )
             //end third container
 
@@ -299,6 +308,50 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+
+  Widget mainPost(BuildContext context, String profile_pic,String name,String img){
+    return Container(
+
+      color: Color(0xFFffffff),
+      margin: EdgeInsets.only(top: 5.0,bottom: 5.0),
+      height: 300.0,
+
+      child: Column(
+        children: <Widget>[
+
+          Container(
+
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                //first container
+                Container(
+
+                ),
+                //end first container
+
+                //start second container
+                Container(
+                  margin: EdgeInsets.all(10.0),
+                  child: Icon(Icons.more_horiz),
+                ),
+                //end second container
+
+
+
+              ],
+            ),
+
+          ),
+
+
+        ],
+      ),
+
+
+    );
+  }
+
 
 }
 
