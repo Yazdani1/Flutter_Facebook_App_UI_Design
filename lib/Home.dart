@@ -217,21 +217,22 @@ class _HomeState extends State<Home> {
 
             //start third container
             Container(
-              height: MediaQuery.of(context).size.width,
+              height: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
               child: ListView(
                 children: <Widget>[
 
-                  mainPost(context, pic5, "Jon Deo", img3),
-                  mainPost(context, pic5, "Jon Deo", img3),
-                  mainPost(context, pic5, "Jon Deo", img3),
+                  mainPost(context, pic5, "Jon Deo", img3,"14 mins",Icons.person_outline),
+                  mainPost(context, pic5, "Jon Deo", img3,"14 mins",Icons.person_outline),
+                  mainPost(context, pic5, "Jon Deo", img3,"14 mins",Icons.person_outline),
 
 
                 ],
               ),
             )
             //end third container
-
-
 
 
           ],
@@ -256,9 +257,9 @@ class _HomeState extends State<Home> {
                 color: const Color(0xff7c94b6),
                 borderRadius: BorderRadius.circular(15.0),
                 image: DecorationImage(
-                    colorFilter: new ColorFilter.mode(
-                        Colors.red.withOpacity(0.6), BlendMode.dstATop),
-                    image: NetworkImage(img),
+                  colorFilter: new ColorFilter.mode(
+                      Colors.red.withOpacity(0.6), BlendMode.dstATop),
+                  image: NetworkImage(img),
                   fit: BoxFit.cover,
                 )
 
@@ -292,7 +293,7 @@ class _HomeState extends State<Home> {
                       maxLines: 1,
                       style: TextStyle(
                           color: Colors.white,
-                        fontSize: 16.0
+                          fontSize: 16.0
                       ),
                     ),
                   ),
@@ -309,16 +310,18 @@ class _HomeState extends State<Home> {
     );
   }
 
-  Widget mainPost(BuildContext context, String profile_pic,String name,String img){
+  Widget mainPost(BuildContext context, String profile_pic, String name,
+      String img,String time, IconData type) {
     return Container(
 
       color: Color(0xFFffffff),
-      margin: EdgeInsets.only(top: 5.0,bottom: 5.0),
+      margin: EdgeInsets.only(top: 5.0, bottom: 5.0),
       height: 300.0,
 
       child: Column(
         children: <Widget>[
 
+          //start first container
           Container(
 
             child: Row(
@@ -326,7 +329,55 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 //first container
                 Container(
-                  
+                  child: Row(
+                    children: <Widget>[
+
+                      //first container
+                      Container(
+                        margin: EdgeInsets.all(10.0),
+                        height: 60.0,
+                        width: 60.0,
+                        child: ClipOval(
+                          child: Image.network(profile_pic,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      //end first container
+                      Container(
+                        margin: EdgeInsets.only(left: 5.0),
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              child: Text(name,
+                                style: TextStyle(
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+
+                            Container(
+                              child: Row(
+                                children: <Widget>[
+
+                                  Container(
+                                    child: Text(time+"\."),
+                                  ),
+                                  Container(
+                                    child: Icon(Icons.person_outline),
+                                  )
+
+                                ],
+                              ),
+                            )
+
+
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 //end first container
 
@@ -338,11 +389,12 @@ class _HomeState extends State<Home> {
                 //end second container
 
 
-
               ],
             ),
 
           ),
+          //end first container
+
 
 
         ],
