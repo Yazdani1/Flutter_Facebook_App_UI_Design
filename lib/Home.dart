@@ -224,9 +224,30 @@ class _HomeState extends State<Home> {
               child: ListView(
                 children: <Widget>[
 
-                  mainPost(context, pic5, "Jon Deo", img3,"56 mins",Icons.person_outline),
-                  mainPost(context, pic4, "David Jonson", img3,"14 mins",Icons.person_outline),
-                  mainPost(context, pic6, "Smith", img3,"10 mins",Icons.person_outline),
+                  mainPost(
+                      context,
+                      pic5,
+                      "Jon Deo",
+                      img1,
+                      "56 mins",
+                      Icons.person_outline,
+                      "Today we went to a party"),
+                  mainPost(
+                      context,
+                      pic4,
+                      "David Jonson",
+                      img2,
+                      "14 mins",
+                      Icons.person_outline,
+                      "Today we went to a party"),
+                  mainPost(
+                      context,
+                      pic6,
+                      "Smith",
+                      img4,
+                      "10 mins",
+                      Icons.person_outline,
+                      "Today we went to a party"),
 
 
                 ],
@@ -311,14 +332,15 @@ class _HomeState extends State<Home> {
   }
 
   Widget mainPost(BuildContext context, String profile_pic, String name,
-      String img,String time, IconData type) {
+      String img, String time, IconData type, String des) {
     return Container(
 
       color: Color(0xFFffffff),
       margin: EdgeInsets.only(top: 5.0, bottom: 5.0),
-      height: 300.0,
+      height: 400.0,
 
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
 
           //start first container
@@ -363,7 +385,7 @@ class _HomeState extends State<Home> {
                                 children: <Widget>[
 
                                   Container(
-                                    child: Text(time+"\."),
+                                    child: Text(time + "\."),
                                   ),
                                   Container(
                                     child: Icon(Icons.person_outline),
@@ -396,6 +418,31 @@ class _HomeState extends State<Home> {
           ),
           //end first container
 
+          //Start secopnd container
+          Container(
+            margin: EdgeInsets.only(left: 15.0),
+            child: Text(des,
+              maxLines: 2,
+              style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.black
+              ),
+            ),
+          ),
+          //end second container
+
+          //Start third container
+
+          Container(
+            margin: EdgeInsets.only(top: 12.0),
+            child: Image.network(img,
+              height: 250.0,
+              fit: BoxFit.cover,
+              width: MediaQuery.of(context).size.width,
+            ),
+          ),
+
+          //end third container
 
 
         ],
