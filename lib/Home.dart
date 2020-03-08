@@ -224,9 +224,9 @@ class _HomeState extends State<Home> {
               child: ListView(
                 children: <Widget>[
 
-                  mainPost(context, pic5, "Jon Deo", img3,"14 mins",Icons.person_outline),
-                  mainPost(context, pic5, "Jon Deo", img3,"14 mins",Icons.person_outline),
-                  mainPost(context, pic5, "Jon Deo", img3,"14 mins",Icons.person_outline),
+                  mainPost(context, pic5, "Jon Deo", img3,"56 mins",Icons.person_outline),
+                  mainPost(context, pic4, "David Jonson", img3,"14 mins",Icons.person_outline),
+                  mainPost(context, pic6, "Smith", img3,"10 mins",Icons.person_outline),
 
 
                 ],
@@ -347,6 +347,7 @@ class _HomeState extends State<Home> {
                       Container(
                         margin: EdgeInsets.only(left: 5.0),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Container(
                               child: Text(name,
