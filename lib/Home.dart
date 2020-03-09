@@ -348,7 +348,6 @@ class _HomeState extends State<Home> {
                 Container(
                   child: Row(
                     children: <Widget>[
-
                       //first container
                       Container(
                         margin: EdgeInsets.all(10.0),
