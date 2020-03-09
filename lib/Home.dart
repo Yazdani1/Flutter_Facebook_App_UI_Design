@@ -260,6 +260,7 @@ class _HomeState extends State<Home> {
     );
   }
 
+
   Widget getStory(BuildContext context, String profile_pic, String img,
       String name) {
     return Container(
@@ -328,6 +329,7 @@ class _HomeState extends State<Home> {
     );
   }
 
+  
   Widget mainPost(BuildContext context, String profile_pic, String name,
       String img, String time, IconData type, String des) {
     return Container(
