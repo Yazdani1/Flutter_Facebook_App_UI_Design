@@ -4,7 +4,6 @@ class Home extends StatefulWidget {
   @override
   _HomeState createState() => new _HomeState();
 }
-
 class _HomeState extends State<Home> {
   String pic1 = "https://images.pexels.com/photos/1839564/pexels-photo-1839564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
   //profile picture
@@ -328,7 +327,7 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-  
+
   Widget mainPost(BuildContext context, String profile_pic, String name,
       String img, String time, IconData type, String des) {
     return Container(
