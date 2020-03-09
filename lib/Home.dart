@@ -328,7 +328,6 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
   
   Widget mainPost(BuildContext context, String profile_pic, String name,
       String img, String time, IconData type, String des) {
