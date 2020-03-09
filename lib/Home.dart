@@ -331,12 +331,9 @@ class _HomeState extends State<Home> {
   Widget mainPost(BuildContext context, String profile_pic, String name,
       String img, String time, IconData type, String des) {
     return Container(
-
       color: Color(0xFFffffff),
       margin: EdgeInsets.only(top: 5.0,bottom: 10.0),
-
       height: 450.0,
-
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
