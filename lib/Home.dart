@@ -6,9 +6,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   String pic1 = "https://images.pexels.com/photos/1839564/pexels-photo-1839564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
-
   //profile picture
 
   String pic2 = "https://images.pexels.com/photos/3060528/pexels-photo-3060528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
@@ -23,7 +21,6 @@ class _HomeState extends State<Home> {
   String img2 = "https://images.pexels.com/photos/3774093/pexels-photo-3774093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
   String img3 = "https://images.pexels.com/photos/3831867/pexels-photo-3831867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
   String img4 = "https://images.pexels.com/photos/3645370/pexels-photo-3645370.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
-
 
   @override
   Widget build(BuildContext context) {
@@ -336,8 +333,9 @@ class _HomeState extends State<Home> {
     return Container(
 
       color: Color(0xFFffffff),
-      margin: EdgeInsets.only(top: 5.0, bottom: 5.0),
-      height: 400.0,
+      margin: EdgeInsets.only(top: 5.0,bottom: 10.0),
+
+      height: 450.0,
 
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -443,6 +441,9 @@ class _HomeState extends State<Home> {
           ),
 
           //end third container
+          SizedBox(height: 15.0,),
+          Divider(height: 10.0,color: Colors.black,)
+
 
 
         ],
@@ -451,7 +452,6 @@ class _HomeState extends State<Home> {
 
     );
   }
-
 
 }
 
