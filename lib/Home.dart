@@ -360,7 +360,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
 
-                      
+
                       //end first container
                       Container(
                         margin: EdgeInsets.only(left: 5.0),
@@ -375,18 +375,15 @@ class _HomeState extends State<Home> {
                                 ),
                               ),
                             ),
-
                             Container(
                               child: Row(
                                 children: <Widget>[
-
                                   Container(
                                     child: Text(time + "\."),
                                   ),
                                   Container(
                                     child: Icon(Icons.person_outline),
                                   )
-
                                 ],
                               ),
                             )
