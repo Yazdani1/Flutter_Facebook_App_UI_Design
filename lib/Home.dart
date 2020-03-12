@@ -359,8 +359,6 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                       ),
-
-
                       //end first container
                       Container(
                         margin: EdgeInsets.only(left: 5.0),
@@ -400,7 +398,7 @@ class _HomeState extends State<Home> {
                   child: Icon(Icons.more_horiz),
                 ),
                 //end second container
-                
+
               ],
             ),
 
