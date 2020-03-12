@@ -394,15 +394,13 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 //end first container
-
                 //start second container
                 Container(
                   margin: EdgeInsets.all(10.0),
                   child: Icon(Icons.more_horiz),
                 ),
                 //end second container
-
-
+                
               ],
             ),
 
