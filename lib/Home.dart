@@ -421,7 +421,6 @@ class _HomeState extends State<Home> {
               width: MediaQuery.of(context).size.width,
             ),
           ),
-
           //end third container
           SizedBox(height: 15.0,),
           Divider(height: 10.0,color: Colors.black,)
