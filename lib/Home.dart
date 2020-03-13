@@ -381,7 +381,7 @@ class _HomeState extends State<Home> {
                                 ],
                               ),
                             )
-                            
+
                           ],
                         ),
                       ),
@@ -400,7 +400,6 @@ class _HomeState extends State<Home> {
 
           ),
           //end first container
-
           //Start secopnd container
           Container(
             margin: EdgeInsets.only(left: 15.0),
