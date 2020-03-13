@@ -258,8 +258,6 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
-
   Widget getStory(BuildContext context, String profile_pic, String img,
       String name) {
     return Container(
@@ -337,7 +335,6 @@ class _HomeState extends State<Home> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-
           //start first container
           Container(
 
