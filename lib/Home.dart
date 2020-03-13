@@ -412,9 +412,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           //end second container
-
           //Start third container
-
           Container(
             margin: EdgeInsets.only(top: 12.0),
             child: Image.network(img,
