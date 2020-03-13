@@ -337,7 +337,6 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           //start first container
           Container(
-
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -382,6 +381,8 @@ class _HomeState extends State<Home> {
                                 ],
                               ),
                             )
+
+                            
                           ],
                         ),
                       ),
