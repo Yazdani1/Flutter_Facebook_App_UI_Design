@@ -424,9 +424,7 @@ class _HomeState extends State<Home> {
           //end third container
           SizedBox(height: 15.0,),
           Divider(height: 10.0,color: Colors.black,)
-
-
-
+          
         ],
       ),
 
