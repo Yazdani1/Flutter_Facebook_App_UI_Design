@@ -426,8 +426,6 @@ class _HomeState extends State<Home> {
           Divider(height: 10.0,color: Colors.black,)
         ],
       ),
-
-
     );
   }
 
