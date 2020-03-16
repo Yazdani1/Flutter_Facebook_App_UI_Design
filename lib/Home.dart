@@ -394,7 +394,7 @@ class _HomeState extends State<Home> {
                   margin: EdgeInsets.all(10.0),
                   child: Icon(Icons.more_horiz),
                 ),
-                
+
                 //end second container
               ],
             ),
@@ -424,7 +424,6 @@ class _HomeState extends State<Home> {
           //end third container
           SizedBox(height: 15.0,),
           Divider(height: 10.0,color: Colors.black,)
-
         ],
       ),
 
