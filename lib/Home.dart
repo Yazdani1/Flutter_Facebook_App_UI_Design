@@ -324,7 +324,6 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
   Widget mainPost(BuildContext context, String profile_pic, String name,
       String img, String time, IconData type, String des) {
     return Container(
@@ -355,7 +354,6 @@ class _HomeState extends State<Home> {
                         ),
                       ),
 
-                      
                       //end first container
                       Container(
                         margin: EdgeInsets.only(left: 5.0),
