@@ -368,7 +368,6 @@ class _HomeState extends State<Home> {
                                 ),
                               ),
                             ),
-
                             Container(
                               child: Row(
                                 children: <Widget>[
@@ -382,7 +381,7 @@ class _HomeState extends State<Home> {
                               ),
                             )
 
-                            
+
 
                           ],
                         ),
