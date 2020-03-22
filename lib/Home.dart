@@ -156,7 +156,6 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         //end of second container
-
                         Container(
                           height: 30.0,
                           width: 0.5,
@@ -380,12 +379,12 @@ class _HomeState extends State<Home> {
                                 ],
                               ),
                             )
-
-
-
                           ],
                         ),
                       ),
+
+
+
                     ],
                   ),
                 ),
