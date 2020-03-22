@@ -111,14 +111,12 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Divider(height: 6.0, color: Colors.black,),
-
                   Container(
                     margin: EdgeInsets.all(20.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween
                       ,
                       children: <Widget>[
-
                         //first container start
                         Container(
                           child: Row(
@@ -134,13 +132,11 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         //end of first container
-
                         Container(
                           height: 30.0,
                           width: 0.5,
                           color: Colors.black,
                         ),
-
                         //second container start
                         Container(
                           child: Row(
@@ -176,8 +172,6 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         //end of third container
-
-
                       ],
                     ),
                   ),
