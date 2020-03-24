@@ -276,7 +276,6 @@ class _HomeState extends State<Home> {
 
             ),
           ),
-
           Positioned(
             top: 10.0,
             left: 10.0,
