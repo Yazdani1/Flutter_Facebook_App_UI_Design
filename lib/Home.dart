@@ -282,9 +282,7 @@ class _HomeState extends State<Home> {
             bottom: 15.0,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
               children: <Widget>[
-
                 Container(
                   height: 50.0,
                   width: 50.0,
@@ -294,7 +292,6 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-
                 Container(
                   height: 15.0,
                   child: Align(
