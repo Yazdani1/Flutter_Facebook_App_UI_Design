@@ -5,6 +5,8 @@ class Home extends StatefulWidget {
   _HomeState createState() => new _HomeState();
 }
 class _HomeState extends State<Home> {
+
+
   String pic1 = "https://images.pexels.com/photos/1839564/pexels-photo-1839564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
   //profile picture
   String pic2 = "https://images.pexels.com/photos/3060528/pexels-photo-3060528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
@@ -14,7 +16,6 @@ class _HomeState extends State<Home> {
   String pic6 = "https://images.pexels.com/photos/3775085/pexels-photo-3775085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
 
   //story img,
-
   String img1 = "https://images.pexels.com/photos/3773425/pexels-photo-3773425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
   String img2 = "https://images.pexels.com/photos/3774093/pexels-photo-3774093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
   String img3 = "https://images.pexels.com/photos/3831867/pexels-photo-3831867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
@@ -110,7 +111,9 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ),
+
                   Divider(height: 6.0, color: Colors.black,),
+
                   Container(
                     margin: EdgeInsets.all(20.0),
                     child: Row(
@@ -250,6 +253,7 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+
   Widget getStory(BuildContext context, String profile_pic, String img,
       String name) {
     return Container(
@@ -259,7 +263,6 @@ class _HomeState extends State<Home> {
       child: Stack(
         textDirection: TextDirection.ltr,
         children: <Widget>[
-
           Container(
             decoration: BoxDecoration(
                 color: const Color(0xff7c94b6),
@@ -317,6 +320,7 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+
   Widget mainPost(BuildContext context, String profile_pic, String name,
       String img, String time, IconData type, String des) {
     return Container(
@@ -422,6 +426,5 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
 }
 
