@@ -273,9 +273,11 @@ class _HomeState extends State<Home> {
                   image: NetworkImage(img),
                   fit: BoxFit.cover,
                 )
-
             ),
           ),
+
+
+
           Positioned(
             top: 10.0,
             left: 10.0,
