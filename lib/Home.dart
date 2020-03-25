@@ -275,7 +275,6 @@ class _HomeState extends State<Home> {
                 )
             ),
           ),
-
           Positioned(
             top: 10.0,
             left: 10.0,
@@ -292,14 +291,12 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-
                 Container(
                   height: 15.0,
                   child: Align(
-                    
+
                     alignment: Alignment.center,
                     child: Text(name,
-
                       maxLines: 1,
                       style: TextStyle(
                           color: Colors.white,
