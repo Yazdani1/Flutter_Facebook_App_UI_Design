@@ -275,7 +275,7 @@ class _HomeState extends State<Home> {
                 )
             ),
           ),
-          
+
           Positioned(
             top: 10.0,
             left: 10.0,
@@ -292,9 +292,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-
-
-
+                
                 Container(
                   height: 15.0,
                   child: Align(
@@ -311,8 +309,6 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-
-
         ],
       ),
     );
