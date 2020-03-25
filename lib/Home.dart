@@ -254,6 +254,7 @@ class _HomeState extends State<Home> {
     );
   }
 
+  
   Widget getStory(BuildContext context, String profile_pic, String img,
       String name) {
     return Container(
@@ -275,7 +276,6 @@ class _HomeState extends State<Home> {
                 )
             ),
           ),
-
           Positioned(
             top: 10.0,
             left: 10.0,
@@ -292,7 +292,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                
+
                 Container(
                   height: 15.0,
                   child: Align(
