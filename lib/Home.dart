@@ -258,7 +258,7 @@ class _HomeState extends State<Home> {
       height: 180.0,
       width: 120.0,
       margin: EdgeInsets.all(10.0),
-      
+
       child: Stack(
         textDirection: TextDirection.ltr,
         children: <Widget>[
@@ -292,6 +292,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
+                
                 Container(
                   height: 15.0,
                   child: Align(
