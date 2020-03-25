@@ -5,8 +5,7 @@ class Home extends StatefulWidget {
   _HomeState createState() => new _HomeState();
 }
 class _HomeState extends State<Home> {
-
-
+  
   String pic1 = "https://images.pexels.com/photos/1839564/pexels-photo-1839564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
   //profile picture
   String pic2 = "https://images.pexels.com/photos/3060528/pexels-photo-3060528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
@@ -254,7 +253,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  
+
   Widget getStory(BuildContext context, String profile_pic, String img,
       String name) {
     return Container(
